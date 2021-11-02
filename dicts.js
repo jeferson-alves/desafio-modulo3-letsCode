@@ -1,0 +1,22 @@
+export const amenitiesDict = {
+    PARTY_HALL: "Salão de Festas",
+    FURNISHED: "Mobiliado",
+    FIREPLACE: "Lareira",
+    POOL: "Piscina",
+    BARBECUE_GRILL: "Churrasqueira",
+    AIR_CONDITIONING: "Ar-condicionado",
+    ELEVATOR: "Elevador",
+    PLAYGROUND: "Playground",
+    GATED_COMMUNITY: "Condomínio fechado",
+    SPORTS_COURT: "Quadra poliesportiva",
+    PETS_ALLOWED: "Aceita animais",
+    LAUNDRY: "Lavaderia",
+    TENNIS_COURT: "Quadra de tenis",
+    GYM: "Academia",
+    AMERICAN_KITCHEN: "Cozinha americana",
+    SAUNA: "Sauna",
+    CINEMA: "Cinema",
+    ELECTRONIC_GATE: "Portão eletrônico",
+    GARDEN: "Jardim",
+    BICYCLES_PLACE: "Bicicletário"
+}

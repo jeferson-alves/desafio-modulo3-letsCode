@@ -1,0 +1,509 @@
+:root {
+    --blue-color: #1190cd;
+    --light-blue-color: #249ad1;
+    --bright-blue-color: #ecf6fb;
+    --beige-color: #fdd685;
+    --dark-beige-color: #fdb10f;
+    --light-gray-color: #ebebeb;
+    --gray-color: #aaaaaa;
+}
+
+* {
+    margin: 0;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    background-color: var(--blue-color);
+    align-items: center;
+    height: 56px;
+    padding: 0 48px;
+}
+
+#logo {
+    background-repeat: no-repeat, repeat;
+    height: 24px;
+}
+
+#logo:hover {
+    cursor: pointer;
+}
+
+#menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    flex-grow: 1;
+}
+
+#menu ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    color: white;
+}
+
+#menu li {
+    display: flex;
+    padding: 0 16px;
+    height: 56px;
+    align-items: center;
+    white-space: nowrap;
+}
+
+#menu li:hover {
+    background-color: var(--light-blue-color);
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    padding: 60px 48px;
+}
+
+.colLeft {
+    /* background-color: violet; */
+}
+
+#divSearch {
+    display: flex;
+    flex-direction: column;
+    width: 254px;
+    padding: 16px;
+    background-color: var(--beige-color);
+    border: 1px solid var(--dark-beige-color);
+    border-radius: 4px;
+}
+
+#divPlace {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+#divPlaceInput {
+    display: flex;
+}
+
+label {
+    margin-bottom: 8px;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.54);
+}
+
+.input {
+    padding: 12px;
+    border-color: hsla(0, 0%, 100%, 0.001);
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%);
+    border-radius: 4px;
+    flex: 100%;
+    color: rgba(0, 0, 0, 0.54)
+}
+
+input:focus {
+    outline: 2px solid var(--blue-color);
+}
+
+.divInput {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+.switchBtn {
+    display: flex;
+    justify-content: start;
+    background-color: #e5cf8c;
+    height: 30px;
+    width: 48px;
+    border-radius: 16px;
+    border: solid 2px #e5cf8c;
+}
+
+.switchBtn div {
+    background-color: white;
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+}
+
+.switchBtn div:hover {
+    cursor: pointer;
+} 
+
+.switchSelected {
+    justify-content: end;
+    background-color: var(--blue-color);
+    border: solid 2px var(--blue-color);
+}
+
+.switchSelected div {
+    background-color: white;
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+}
+
+#divTourElements{
+    display: flex;
+    align-items: center;
+}
+
+#divTourElements p{
+    margin-left: 8px;
+    color: #333333;
+}
+
+#divMaxMin {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 254px;
+}
+
+#divMaxMin > div {
+    display: flex;
+    flex-direction: column;
+}
+
+#divMaxMin div:last-child {
+    justify-content: center;
+}
+
+.price {
+    width: 91px;
+    text-align: right; 
+}
+
+.priceGroup {
+    display: flex;
+    align-items: center;
+}
+
+.priceMark {
+    display: flex;
+    position: relative;
+    left: 10px;
+    bottom: -4px;
+    background-color: white;
+    color: rgba(0,0,0,.4);
+    width: 0px;
+    font-weight: 400;
+}
+
+.valueLine{
+    display: flex;
+    position: relative;
+    bottom: -49px;
+    height: 1px;
+    width: 40px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+#divRooms {
+    margin-bottom: 0;
+}
+
+.btnNumbers {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    height: 30px;
+}
+
+.btnNumber  {
+    padding: 0 12px;
+    border-color: hsla(0, 0%, 100%, 0.001);
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%);
+    border-radius: 15px;
+    background-color: white;
+    color: rgba(0, 0, 0, 0.54)
+}
+
+.btnNumber:hover {
+    cursor: pointer;
+    background-color: var(--light-gray-color);
+}
+
+#divSpec {
+    display: flex;
+    flex-direction: column;
+    width: 254px;
+    padding: 16px;
+    background-color: white;
+    border: 1px solid var(--light-gray-color);
+    border-radius: 4px;
+}
+
+.areaGroup {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.areaMark {
+    display: flex;
+    position: relative;
+    right: 35px;
+    bottom: -4px;
+    background-color: white;
+    color: rgba(0,0,0,.4);
+    width: 0px;
+    font-weight: 400;
+}
+
+.areaInput {
+    padding-right: 37px;
+    width: 66px;
+}
+
+.colRight {
+    display: flex;
+    flex-direction: column;
+    margin-left: 24px;
+    width: 100%;
+}
+
+#navMenu {
+    display: flex;
+    flex-direction: row;
+}
+
+#navMenu {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    /* background-color: violet; */
+    /* border-bottom: solid 1px var(--blue-color); */
+}
+
+#navMenu ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 0;
+    color: var(--blue-color);
+}
+
+#navMenu li {
+    display: flex;
+    padding: 0 24px;
+    height: 44px;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.navItemNoSelected:hover {
+    background-color: var(--bright-blue-color);
+    cursor: pointer;
+    border-bottom: solid 3px var(--bright-blue-color);
+}
+
+.navItemSelected {
+    border-bottom: solid 3px var(--blue-color);
+}
+
+#horizontalLine {
+    background-color: var(--blue-color);
+    height: 1px;
+}
+
+#generalInfoDiv {
+    display: flex;
+    align-items: baseline;
+    margin-top: 16px;
+}
+
+#generalInfoDiv {
+    font-size: 10px;
+}
+
+#generalInfoDiv h1:last-child{
+    margin-left: 3px;
+    font-weight: 400;
+}
+
+#divCity {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 16px 0;
+}
+
+.cityElement {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    border: 1px solid var(--blue-color);
+    border-radius: 16px;
+    height: 31px;
+    padding: 0 13px;
+    color: var(--blue-color);
+}
+
+.cityElementClose {
+    margin-left: 8px;
+}
+
+.cityElement:hover {
+    background-color: var(--bright-blue-color);
+    cursor: pointer;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid var(--light-gray-color);
+    border-radius: 4px;
+    margin-bottom: 16px;
+}
+
+.card:hover {
+    cursor: pointer;
+    box-shadow: 4px 6px 16px var(--light-gray-color);
+    transition: box-shadow 0.4s ease-in-out
+}
+
+.imgDiv {
+    height: 224px;
+}
+
+.imgCard {
+    height: 224px;
+    width: 336px;
+}
+
+.divCardRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 16px;
+}
+
+.infoCardDiv {
+    
+}
+
+.address {
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.54);
+}
+
+.name {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.amenitiesUl {
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.amenityItem {
+    list-style-type: none;
+    padding: 0 8px;
+    margin-right: 8px;
+    background-color: var(--light-gray-color);
+    color: var(--gray-color);
+    height: 21px;
+    border-radius: 11px;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 21px;
+    max-width: 180px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.detailsUl {
+    display: flex;
+    padding: 0;
+    margin: 12px 0;
+}
+
+.detailItem {
+    list-style-type: none;
+    margin-right: 8px;
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.detailItem span:first-child {
+    font-weight: 600;
+}
+
+.priceItem {
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.condoFee {
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.condoFee span{
+    font-weight: 700;
+}
+
+.divError {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.divError span {
+    color: red;
+}
+
+.citySelected {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+    list-style-type: none;
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.54);
+    padding: 0;
+}
+
+.citySelected li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.citySelected div {
+    display: flex;
+    font-size: 10px;
+    font-weight: 800;
+    justify-content: center;
+    align-items: center;
+    margin-left: 8px;
+    height: 16px;
+    width: 16px;
+    color: rgba(90, 37, 37, 0.54);
+    border-radius: 10px;
+}
+
+.citySelected div:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: var(--beige-color);
+}
